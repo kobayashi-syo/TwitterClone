@@ -18,8 +18,8 @@
 
 @media screen and (max-width: 500px) {
     .container {
-        padding;
-        0: }
+        padding: 0; 
+    }
 
     .side {
         width: 60px;
@@ -46,6 +46,8 @@
 }
 
 a {
+    font-size: 13px;
+    color: #1af;
     text-decoration: none;
 }
 
