@@ -1,6 +1,6 @@
 /* 全体 */
-html{
-    height:100%;
+html {
+    height: 100%;
 }
 
 .container {
@@ -22,7 +22,7 @@ html{
 
 @media screen and (max-width: 500px) {
     .container {
-        padding: 0; 
+        padding: 0;
     }
 
     .side {
@@ -47,6 +47,16 @@ html{
 
 .btn:hover {
     color: #fff;
+}
+
+.btn-reverse{
+    background-color:white;
+    color:#1af;
+    border:1px solid #1af;
+}
+
+.btn-reverse:hover{
+    color:red;
 }
 
 a {
@@ -251,19 +261,95 @@ a {
     }
 }
 
-
 /* 会員登録（ログイン共用） */
-body.signup{display: flex;align-items: center;padding-top: 40px;padding-bottom: 40px;height: 100%;}
+body.signup {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+}
 
-.signup{background-color: black;color: #fff;}
+.signup {
+    background-color: black;
+    color: #fff;
+}
 
-.signup .form-signup{width: 100%;max-width: 330px;padding: 15px;margin: auto;}
+.signup .form-signup {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
 
-.signup .logo-white{margin-bottom: 30px;width: 50px;}
+.signup .logo-white {
+    margin-bottom: 30px;
+    width: 50px;
+}
 
-.signup h1{font-size: 20px;margin-bottom: 20px;}
+.signup h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 
-.signup input{margin-bottom: 10px;background-color: #123;border-color: #456;color: #fff;}
+.signup input {
+    margin-bottom: 10px;
+    background-color: #123;
+    border-color: #456;
+    color: #fff;
+}
 
-.signup input:focus{background-color: #123;border-color: #1af;color: #fff;}
+.signup input:focus {
+    background-color: #123;
+    border-color: #1af;
+    color: #fff;
+}
 
+/* ユーザープロフィール画面 */
+.profile .profile-area {
+    padding: 25px;
+}
+
+.profile .profile-area .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.profile .profile-area .top .user {
+    width: 30%;
+    padding: 5px 15px 10px 0;
+}
+
+.profile .profile-area .top .user img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(235,238,240);
+}
+
+.profile .profile-area .top button {
+    margin-bottom: 20px;
+}
+
+.profile .profile-area .name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.profile .profile-area .follow-follower {
+    display: flex;
+    padding: 15px 0 10px 0;
+}
+
+.profile .profile-area .follow-follower .follow-count {
+    width: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile .profile-area .follow-follower .follow-text {
+    width: 100px;
+    font-size: 16px;
+    margin-right: 30px;
+    color: #778;
+}
