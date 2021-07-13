@@ -5,10 +5,10 @@
 $(function () {
     // いいね！がクリックされたとき
     $('.js-like').click(function () {
-        const this_obj = $(this);
+        const this_obj = $(this);  //$(this) = js-like（クラス名）の要素
         const like_id = $(this).data('like-id');
         const like_count_obj = $(this).parent().find('.js-like-count');
-        let like_count = Number(like_count_obj.html());
+        let like_count = Number(like_count_obj.html()); // like-count-objから取得したデータを数字に変換し、0か1を返す
 
         if (like_id) {
             // いいね！取り消し
@@ -18,7 +18,7 @@ $(function () {
             this_obj.data('like-id', null);
 
             // いいね！ボタンの色をグレーに変更
-            $(this).find('img').attr('src', '../Views/img/icon-heart.svg');
+            $(this).find('img').attr('src', '../Views/img/icon-heart.svg'); //attr = 書き換える
         } else {
             // いいね！付与
             // いいね！カウントを増やす
@@ -31,3 +31,6 @@ $(function () {
         }
     })
 })
+
+
+
