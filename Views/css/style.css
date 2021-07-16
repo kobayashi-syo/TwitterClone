@@ -65,7 +65,11 @@ a {
     text-decoration: none;
 }
 
-/* ã‚µã‚¤ãƒ‰ */
+.text-sm{
+    font-size: 0.7rem;
+}
+
+/* サイドメニュー */
 .side .side-inner {
     top: 0px;
     padding-top: 20px;
@@ -118,7 +122,7 @@ a {
     }
 }
 
-/* ãƒ¡ã‚¤ãƒ³ */
+/* メイン */
 .main .main-header {
     padding: 20px;
     border-bottom: 1px solid #eef;
@@ -131,7 +135,7 @@ a {
     font-weight: bold;
 }
 
-/* ãƒ›ãƒ¼ãƒ  */
+/* ホーム  */
 .home .tweet-post {
     display: flex;
     padding: 10px;
@@ -161,7 +165,7 @@ a {
 }
 
 .home .tweet-post .input-area textarea:focus {
-    /* focusï¼ã“ã®ã‚¨ãƒªã‚¢ãŒã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã¨ãã‚’è¡¨ã™ */
+    /* focus = マウスカーソルをのせたときのCSS */
     outline: none;
 }
 
@@ -261,7 +265,7 @@ a {
     }
 }
 
-/* ä¼šå“¡ç™»éŒ²ï¼ˆãƒ­ã‚°ã‚¤ãƒ³å…±ç”¨ï¼‰ */
+/* 会員登録（ログイン）共用 */
 body.signup {
     display: flex;
     align-items: center;
@@ -305,7 +309,7 @@ body.signup {
     color: #fff;
 }
 
-/* ãƒ¦ãƒ¼ã‚¶ãƒ¼ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ«ç”»é¢ */
+/* ユーザープロフィール */
 .profile .profile-area {
     padding: 25px;
 }
@@ -354,7 +358,7 @@ body.signup {
     color: #778;
 }
 
-/* æ¤œç´¢ç”»é¢ */
+/* 検索画面 */
 .search .search-area {
     display: flex;
     padding: 15px;
@@ -366,7 +370,7 @@ body.signup {
     margin-right: 20px;
 }
 
-/* é€šçŸ¥ç”»é¢ */
+/* 通知画面 */
 .notification .notification-list .no-result {
     padding: 20px;
 }
