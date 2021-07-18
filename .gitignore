@@ -1,2 +1,5 @@
 # OSが自動生成するファイル
 .DS_Store
+
+#  ダンプファイル
+/twitter_clone_testdata.sql
